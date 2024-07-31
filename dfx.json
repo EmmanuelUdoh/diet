@@ -1,0 +1,27 @@
+{
+  "canisters": {
+    "dietDesignerFE_backend": {
+      "candid": "src/dietDesignerFE_backend/dietDesignerFE_backend.did",
+      "package": "dietDesignerFE_backend",
+      "type": "rust"
+    },
+    "dietDesignerFE_frontend": {
+      "dependencies": [
+        "dietDesignerFE_backend"
+      ],
+      "source": [
+        "src/dietDesignerFE_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "dietDesignerFE_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
